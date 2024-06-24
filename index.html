@@ -10,7 +10,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     <div class="hero-header">
@@ -27,10 +28,10 @@
                     </div>
                     <ul class="navlinks ">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#" id="certificates-button">Certificates</a></li>
                         <li><a href="#" class="download-cv">Resume</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="/contact" class="contact-button">Contact</a></li>
+                        <li><a href="#" class="contact-button">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -45,20 +46,139 @@
                         Welcome to my personal website! My name is Himal Bhandari, and I am currently a student at Pokhara University. As a passionate and dedicated backend engineer, I am leading projects and striving to innovate within the tech industry.
                     </p>
                     <div class="btn-group">
-                        <a href="#" class="button download-cv">Download CV</a>
+                        <a href="documents/himal_cv.pdf" class="button download-cv">Download CV</a>
                         <a href="#" class="button contact-button">Contact</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Code for the Cv section -->
                 <div class="container">
                     <section id="cv-section" style="display: none;">
                         <div class="cv-info">
                         <h2>Curriculum Vitae</h2>
                         <p>Here you can find the detailed CV with all the relevant information about the professional background, skills, and achievements.</p>
                     </div>
-                        <iframe src="himal_cv.pdf" ></iframe>
+                        <iframe src="documents/himal_cv.pdf" ></iframe>
                     </section>
                 </div>
+
+                <!-- Code for the certificate section -->
+
+                <section id="certificates-section" class="certificates-section">
+                    <div class="certificate-container row " >
+                        <div class="certificate col-md-6">
+                            <div class="certificate-wrap">
+                                <div class="certificate-info">
+                                    <h3> Crash course on python.</h3>
+                                    <hr>
+                                    <p>This is an online non-credit course authorized by Google and offered through Coursera.In this course i have learned basic of python including syntax,OOPS etc.  </p>
+                                    <br>
+                                    <p><strong>Achievement Year:</strong> Dec,2022</p><br>
+                                </div>
+                                <div class="certificate-frame">
+                                    <img src="documents/Pythoncertificate.png" alt="Python certificate unable to open.">
+                                </div>
+                                <div class="button-group">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/MC86HXU6MN7V" class="button">Verify</a>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="certificate col-md-6">
+                            <div class="certificate-wrap">
+                                <div class="certificate-info">
+                                    <h3> Javascript basics</h3>
+                                   <hr>
+                                    <p>This is the certificate provided by the University of California, Davis.In this course i have learned Intro of Selection Control Structures, and Understanding Core Programming Structures.  </p>
+                                    <br>
+                                    <p><strong>Achievement Year:</strong> Feb,2023</p><br>
+                                </div>
+                                <div class="certificate-frame">
+                                    <img src="documents/Javascriptbasic.png" alt="Javascript certificate unable to open.">
+                                </div>
+                                <div class="button-group">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/G3TTJHQAFWBH" class="button">Verify</a>
+                                </div>
+                            </div>
+                            </div>
+                    <div class="certificate col-md-6">
+                    <div class="certificate-wrap">
+                        <div class="certificate-info">
+                            <h3>Interactivity with JavaScript and jQuery</h3>
+                           <hr>
+                            <p>This is  an online non-credit course authorized by University of California, Davis and offered through Coursera.In this course i have learned Basic interaction with the javascript.</p>
+                            <br>
+                            <p><strong>Achievement Year:</strong> Feb,2023</p><br>
+                        </div>
+                        <div class="certificate-frame">
+                            <img src="documents/Interactivity with javascript.png" alt="Javascript certificate unable to open.">
+                        </div>
+                        <div class="button-group">
+                            <a href="https://www.coursera.org/account/accomplishments/verify/RDHYLGURHRT9" class="button">Verify</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="certificate col-md-6">
+                        <div class="certificate-wrap">
+                            <div class="certificate-info">
+                                <h3>Animation with JavaScript and jQuery</h3>
+                                <hr>
+                                <p>This is  an online non-credit course authorized by University of California, Davis and offered through Coursera.In this course i have learned  JavaScript and jQuery using small projects with different types of animation.</p>
+                                <br>
+                                <p><strong>Achievement Year:</strong> March,2023</p><br>
+                            </div>
+                            <div class="certificate-frame">
+                                <img src="documents/Animaton with javascript.png" alt="JavaScript certificate unable to open.">
+                            </div>
+                            <div class="button-group">
+                                <a href="https://www.coursera.org/account/accomplishments/verify/6HGHSNHB4NGV" class="button">Verify</a>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                </section>
+
+                <!-- Skills section -->
+                <section id="skills">
+                    <h2>My Skills</h2>
+                    <div class="skills-container">
+                      
+                        <div class="skill">
+                            <i class="fab fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icons8-c.svg" alt="">
+                             <p>C#</p>
+                         </div>
+                         <div class="skill">
+                            <img src="images/icons8-.net-framework.svg" alt="">
+                             <p>.NET core</p>
+                         </div>
+
+                        <div class="skill">
+                            <i class="fa-brands fa-python"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/icons8-django.svg" alt="">
+                             <p>Django</p>
+                         </div>
+                        
+                       
+                        <div class="skill">
+                            <i class="fa-brands fa-aws"></i>
+                            <p> AWS</p>
+                        </div>
+                       
+                        <div class="skill">
+                           <img src="images/icons8-azure.svg" alt="">
+                            <p>Azure</p>
+                        </div>
+                       
+
+                    </div>
+                </section>
 
             <!-- Footer section -->
             <footer>
@@ -86,57 +206,7 @@
 
      <!---typed js for typing text effect-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-     <script>
-        /** creating button click show hide navbar **/
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
-
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
-
-        // Code for the adding the class when the crouser enter the button
-
-        var buttons=document.querySelectorAll(".button")
-         buttons.forEach(element => {
-            element.addEventListener("mouseenter", function() {
-        element.classList.add("active");
-    });
-    element.addEventListener("mouseleave", function() {
-        element.classList.remove("active");
-    });
-            })
-
- //Code to scroll to the footer when contact is clicked
-            document.querySelectorAll('.contact-button').forEach(element=>{element.addEventListener('click', function(event) {
-                event.preventDefault();
-    document.getElementById('contact-footer').scrollIntoView({
-        behavior: 'smooth'
-    });
-})
-});
-
-//Code to show the cv when the download cv button is clicked
- document.querySelectorAll('.download-cv').forEach(element=>{element.addEventListener('click',function(event) {
-    event.preventDefault()
-            var cvSection = document.getElementById('cv-section');
-            cvSection.style.display = 'block';
-            cvSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        })})
-
-
-      
-
-        var typed=new Typed(".input",{
-            strings:["Backend  Developer","Project Leader","DevOps Engineer"],
-            typedSpeed:70,
-            backSpeed:55,
-            loop:true
-        })
-     </script>
+     
+     <script src="static/index.js"></script>
 </body>
 </html>

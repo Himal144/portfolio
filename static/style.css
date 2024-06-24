@@ -122,7 +122,7 @@ nav .navlinks li a {
 }
 
 .hero-text h5 span {
-    color: #007ced;
+    color: #2e87db;
     font-size: 16px;
 }
 
@@ -136,15 +136,20 @@ nav .navlinks li a {
 }
 
 .btn-group{
-    margin:45px 0;
+    margin:5px 0;
 }
 
 .btn-group .button :hover{
     background-color:  #007ced;
 }
-
-.btn-group .button{
+.button-group {
+    margin: 5px 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+.button-group .button{
     border-color: #d5d5d5;
+    display: flex;
     color:#fff;
     background-color: #333;
     padding: 12px 25px;
@@ -153,7 +158,21 @@ nav .navlinks li a {
     border-radius: 30px;
     border:2px solid #e5e5e5;
     box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
-    justify-content: space-between;
+    text-decoration: none;
+}
+
+.btn-group .button{
+    border-color: #d5d5d5;
+    display: flex;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+    justify-content: space-between!important;
     text-decoration: none;
 }
 
@@ -165,11 +184,6 @@ iframe {
     z-index: -1; /* Send iframe to the background */
 }
 
-
-
-
-
-
 .button.active{
     border-color: #007ced;
 }
@@ -180,7 +194,116 @@ iframe {
     margin-right: 10px;
     transition: 0.5s;
 }
+hr{
+    color: white;
+}
+/* Css for the certificate */
+.certificate-wrap{
+    margin:20px 20px;
+    background: #323232;
+    border-radius: 7px;
+    box-shadow:rgba(224, 223, 223, 0.333);
+    padding: 20px 20px 0px 20px;
+    justify-content: center!important;
+    align-items: center!important;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    
+}
+.certificate:hover .certificate-wrap {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(169, 169, 169, 0.3);
+    
+}
 
+.certificate {
+    /* margin: 5px  0px ; */
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.certificate-info h3 {
+    text-align: center;
+    color:#007ced;
+    margin-bottom: 5px;
+}
+.certificate-info p {
+    color: white;
+    margin: 0;
+}
+
+.certificate-frame img{
+    height:400px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0; /* Ensure the iframe is below the info */
+}
+
+#certificates-section{
+    display: none;
+}
+
+/* Skills section styling */
+#skills {
+    padding: 50px;
+    text-align: center;
+    background-color: #323232;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:white;
+}
+
+/* Skills container */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual skill styling */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.skill i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill p {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+ 
 
 
 /* Responsive design for navbar and hero section */
